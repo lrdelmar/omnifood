@@ -1,0 +1,27 @@
+GRID CONTAINERS & GRID ITEMS
+
+grid lines seperate the columns and the rows
+the gaps are actually called gutters
+the grid track can be an entire row or a column including gaps
+a grid cell is the individual grid items (boxes) between the grid lines
+
+
+GRID CONTAINER
+
+display: grid;
+grid-template-columns: 1fr 1fr 1fr; (establish columns)
+grid-template-rows: 2fr 2fr; (establish rows)
+row-gap: 0; (create space between row tracks)
+colummn-gap: 0; (create space between column tracks)
+justify-items: stretch; (align rows)
+align-items: stretch; (align columns)
+justify-content: start; (align grid within the container)
+align-content: start; (align grid within the container)
+
+GRID ITEMS
+
+grid-column: start / end; 
+grid-row: start / end; (place a grid item into a specific cell based on the line numbers. span keyword can be used to span an item across multiple cells)
+
+justify-self: stretch;
+align-self: stretch; (used to align a single cell)

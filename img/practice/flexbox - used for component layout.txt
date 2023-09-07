@@ -1,0 +1,41 @@
+flexbox - used for component layout within a website, automatically divides the space by its child elements, easy to align items to one another both vertically and horizontally. replaces float.
+
+to create a flexbox container set the container to "display: flex;"
+
+now the child elements within that container are flex items
+
+the main axis and cross axis - we can change the direction of these axis 
+
+by setting the container to align-items: center; the flex items will align themselves vertically within the container 
+
+to align them to the left use flex-start and to align at the end use flex-end
+
+the default value of align-items is stretch, the flex items will stretch to fill their container
+
+to center them horizontally use justify-content in the container and set it to center
+
+other options are:
+
+space-between, the items will distribute evenly across the container with space between them
+
+
+CONTAINER attributes (default) - 
+gap: 0; (creates space between items, without margin)
+justify-content: flex-start; (aligns items along the main axis)
+align-items: stretch; (aligns items along the cross axis)
+flex-direction: row; (defines the main axis)
+flex-wrap: nowrap; (allows items to wrap onto a new line)
+align-content: stretch (only applies when there are multiple lines)
+
+FLEX ITEM attributes (default)- 
+align-self: auto; (overwrites align-items on an individual item)
+flex-grow: 0; (allows an item to grow, 0 means no 1+ means yes)
+flex-shrink: 1; (allows an item to shrink, 0 means no 1+ means yes)
+flex-basis: auto; (defines an items width)
+flex: 0 1 auto; (recommended shorthand for grow/shrink/basis)
+order: 0; (controls the order of items, -1 first, 1 last)
+
+with flex-shrink as default (1) then the items will always shrink to fit their container regardless of the flex-basis size that is set
+
+with flex-grow set to 1 (default 0) then the items will grow to fit their container, any space in the container is equally divided between its items, if this property is only given to one item then it will fill all space left
+

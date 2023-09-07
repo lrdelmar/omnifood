@@ -1,0 +1,284 @@
+design decisions for the 10 'ingredients' 
+are based on the WEBSITE PERSONALITY
+
+/*
+SPACING SYSTEM ( #px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM ( #px )
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+~~~~~~~~~~
+#1 typography
+
+serif vs sans-serif
+serif has the tails/feet at the ends of letters
+gives a traditional look, conveys trust, good for long text
+sans-serif gives a modern feel, clean, simple, easier for beginner designers
+
+only use good/popular typefaces, don't go for anything weird or crazy looking
+
+it's okay to use 1 font, 2 max
+
+think about the personality of the website and choose a sans-serif or serif font. experiment with all 'good' fonts and try different fonts as you build the website
+
+FONT SIZES - limit your choices
+normal text - between 16-32px
+headlines - 50px+ and bold 600+
+DON'T use font weight 400 or less
+
+READING EXPERIENCE
+between 65 and 75 char per line
+line-height for normal text between 1.5 and 2 - the smaller or longer the text, the larger the height
+try decreasing the letter-spacing if it looks unnatural
+experiment with all caps for short titles - small and bold, increase letter-spacing
+usually, don't justify text, don't center larger blocks of text either
+
+GOOD SANS-SERIF FONTS (Google Fonts. Font Squirrel)
+Inter
+Open Sans
+Roboto
+Monstserrat
+Work Sans
+Lato
+
+GOOD SERIF FONTS
+Merriweather
+Aleo
+Playfair Display
+Cormorant
+Cardo
+Lora
+
+TYPESCALE SYSTEMS - font-size systems
+type-scale.com
+
+
+
+~~~~~~~~~~~
+#2 colours
+red - draws the most attention, power, passion, excitement
+
+orange - less aggressive, happiness, cheerfulness and creativity
+
+yellow - joy, brightness and intelligence
+
+green - harmony, nature, growth and health
+
+blue - peace, trustworthy, professional
+
+purple - wealth, wisdom, magic
+
+pink - romance, care and affection
+
+brown - nature, comfort, durability
+
+black - power, elegance, minimalism, grief, sorrow
+
+USE A GOOD TONE
+- open color
+- tailwindcss
+- flat ui colors 2
+
+COLOUR SYSTEMS
+main colour + grey colour + accent colour
+eg. turquoise + deep dark blue + red tone
+
+have a relationship between the main colour and others
+have multiple shades of these colours (lighter and dark versions or "tints" and "shades")
+
+tint & shade generator if choosing your own colours
+- palleton.com
+- coolors (https://coolors.co/0a122a-fbe137-a0acad)
+
+use the MAIN colour to draw attention to the most important elements to the page - buttons
+
+colours add interesting accents or make entire sections or components stand out
+
+use colour strategically in images and illustrations
+
+with dark coloured backgrounds, use a lighter tint of the same colour for the text
+
+text should not be completely black but very dark shades of colours, softens black text
+
+never make the text too light for accessibility reasons, have a decent contrast of at least 5:1 or greater
+
+~~~~~~~~~~
+#3 images/illustrations
+
+product images - demonstrate the product you're selling
+storytelling photos - convey the message of your website
+illustrations - abstract storytelling, original, character
+patterns - as a background, behind images to add interest, visual detail
+
+stock image websites:
+-unsplash
+-pexels
+-drawkit
+-undraw
+
+show real people to trigger emotion
+crop images to fit your message
+combine photos, illustrations and patterns
+
+text on images:
+darken or brighten the image
+use a gradient to darken some of the image
+position the text into a neutral area in the image
+put the text in a box
+
+
+account for high-res screens, make image dimensions 2x as big as their displayed size - if you want the image to be 300x300 on the website, make the original image 600x600 - if you dont do this the image will appear blurry on a high-res screen
+
+compress images for a lower file size and load performance
+use SQUOOSH to compress images for a smaller file size
+when using multiple images side by side must have the same dimensions or aspect ratio
+
+~~~~~~~~~~
+#4 icons
+
+use a good icon pack and not random icons
+free or emojis - don't mix icon packs
+- phosphor icons
+- ionicons
+- icons8
+- heroicons
+
+use svg icons or icon fonts (not bitmap, jpg or png)
+
+use a similar roundness and weight to your websites personality and typography
+
+use icons to provide visual assistance to text
+build feature blocks - icon at the top, heading and description
+can be combined with actions
+can use them as bullet points
+keep icons neutral, same colour as text
+or
+different colours to draw attention
+icons should make sense, fit the text or action
+do not make the icons larger than they were designed for, find icons that are the right size for their use
+
+COLOURING SVGS - solid use the fill property and for outline use the stroke property
+
+~~~~~~~~~~
+#5 shadows
+
+shadows are used to bring an element forward, off the flat page, don't just use them anywhere and only if it matches the website personality
+
+use light shadows (rgba)
+
+small shadows for small elements 
+
+medium shadows for larger areas to make them stand out
+
+large shadows for elements to float above the webpage like a pop-up or a menu
+
+experiment with shadows on link and button elements, hover with a shadow and then remove the shadow when active to give the feeling of the button 'clicking'
+
+can use colour shadows to make elements glow
+
+
+~~~~~~~~~~
+#6 border-radius
+
+increases the playfulness, more radius more fun, less radius is serious
+
+match the typeface, less radius for blocky square fonts and more radius for rounded fonts
+
+can use on buttons, images, icons and larger elements like boxes
+
+best to use a value that is larger than the height of the element if you want to guarantee fully rounded edges
+
+~~~~~~~~~~
+#7 whitespace
+
+without it websites look cluttered
+
+creates a clean, modern and polished look
+communicates how different pieces are related and creates a hierarchy
+implies invisble relationships between elements
+
+use loads of whitespace between sections eg 100-200px
+more vertical space is needed than horizontal space
+use whitespace between elements
+use whitespace instead of line breaks
+
+related or grouped elements should be closer together
+
+start with too much whitespace and then reduce it as needed - too much looks detached and not enough looks cramped
+
+match other design choices - big text or big icons need more white space
+
+try a hard rule - using multiples of 16px for all spacing
+
+~~~~~~~~~~
+#8 visual hierarchy
+
+establishes which elements on the page are the most important ones
+
+draws attention to the most important elements
+
+helps to define a path for users, to guide them through the page
+
+this can be done using a combination of position, size, colours, spacing, borders and shadows
+
+- position important elements to the top of the page, elements that appear first will get more attention
+- use images mindfully, they draw a lot of attention
+- use whitespace strategically to emphasise elements
+- use a combo of font size, weight, colour and whitespace to give different levels of importance e.g. lighter colours for less important text or bolder bigger text for more importance
+- emphasise - titles, sub-titles, links, buttons, data points, icons
+- de-emphasise - labels, secondary information
+
+between components - background colours, shadows or borders
+to make an element more important, try de-emphasising it's secondary element
+which components ? 
+testimonials, call-to-action, highlight sections, preview cards, forms, pricing tables, important rows/columns
+
+
+~~~~~~~~~~
+#9 user experience
+~~~~~~~~~~
+#10 components/layout
+
+
+
+~~~~~~~~~~
+PERSONALITIES
+~~~~~
+SERIOUS / ELEGANT
+conveys luxury/elegance
+thing serif typefaces
+golden and pastel colours
+big high quality images
+~~~~~
+MINIMALIST / SIMPLE
+focus of essential text content
+small or medium sized sans-serif black font
+lines and few images/icons
+~~~~~
+PLAIN / NEUTRAL
+neutral and small typefaces
+structured layout
+~~~~~
+BOLD / CONFIDENT
+makes an impact using:
+big and bold typography
+big and bright coloured blocks
+~~~~~
+CALM / PEACEFUL 
+products or services that care
+calming pastel colours
+soft serif headings
+matching images/illustrations
+~~~~~
+START-UP / UPBEAT
+start-up companies
+medium sized sans-serif font
+light-grey text and backgrounds
+rounded elements
+~~~~~
+PLAYFUL / FUN
+colourful round designs
+creative elements such as hand drawn icons, illustrations, animations and fun language
+
